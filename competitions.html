@@ -12,7 +12,7 @@
       <h1>Handball World</h1>
       <nav>
         <ul>
-          <li><a href="index.html">Accueil</a></li> 
+          <li><a href="index.html">Accueil</a></li>
           <li class="dropdown">
             <a href="a%20propos.html">À propos ▼</a>
             <ul class="dropdown-menu">
@@ -30,41 +30,49 @@
             </ul>
           </li>
           <li><a href="joueurs.html">Clubs & Joueurs</a></li>
-          <li><a href="php/actualites.php">Actualités</a></li>
+          <li><a href="actualite.html">Actualités</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  
 
   <main class="container">
-    <h2>🏆 Compétitions majeures de handball</h2>
-    <p>Découvrez les plus grandes compétitions internationales et européennes qui rythment la saison de handball.</p>
+    <section class="hero">
+      <h2>🏆 Compétitions majeures de handball</h2>
+      <p>Découvrez les plus grands tournois internationaux qui font vibrer les fans de handball dans le monde entier.</p>
+    </section>
 
-    <div class="card-grid">
-      <div class="card">
-        <img src="images/JO.png" alt="Jeux Olympiques Handball">
-        <h3>Jeux Olympiques</h3>
-        <p>Tournoi organisé tous les 4 ans, rassemblant les meilleures sélections nationales du monde.</p>
+    <section class="intro">
+      <div class="cards">
+        <a href="JO.html" class="card">
+          <img src="images/JO.png" alt="Jeux Olympiques Handball">
+          <h3>Jeux Olympiques</h3>
+          <p>Tournoi organisé tous les 4 ans, rassemblant les meilleures sélections nationales du monde.</p>
+        </a>
+        <a href="mondial.html" class="card">
+          <img src="images/CDM.png" alt="Championnat du Monde de Handball">
+          <h3>Championnat du Monde</h3>
+          <p>Organisé par la Fédération Internationale, c’est la compétition la plus prestigieuse après les JO.</p>
+        </a>
+        <a href="euro.html" class="card">
+          <img src="images/CE.png" alt="Championnat d'Europe de Handball">
+          <h3>Championnat d’Europe</h3>
+          <p>Réunit les meilleures équipes européennes. Très relevé, il se tient tous les 2 ans.</p>
+        </a>
+        <a href="LDC.html" class="card">
+          <img src="images/LDC.png" alt="Ligue des Champions EHF">
+          <h3>Ligue des Champions (EHF)</h3>
+          <p>Compétition européenne de clubs où s'affrontent les meilleures formations du continent.</p>
+        </a>
       </div>
-      <div class="card">
-        <img src="images/CDM.png" alt="Championnat du Monde de Handball">
-        <h3>Championnat du Monde</h3>
-        <p>Organisé par la Fédération Internationale, c’est la compétition la plus prestigieuse après les JO.</p>
-      </div>
-      <div class="card">
-        <img src="images/CE.png" alt="Championnat d'Europe de Handball">
-        <h3>Championnat d'Europe</h3>
-        <p>Réunit les meilleures équipes européennes. Très relevé, il se tient tous les 2 ans.</p>
-      </div>
-      <div class="card">
-        <img src="images/LDC.png" alt="Ligue des Champions EHF">
-        <h3>Ligue des Champions (EHF)</h3>
-        <p>Compétition européenne de clubs où s'affrontent les meilleurs clubs du continent.</p>
-      </div>
-    </div>
-    
+    </section>
   </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Handball World - Tous droits réservés</p>
+    </div>
+  </footer>
 </body>
 </html>
