@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Site Handball</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Handball World</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -12,7 +12,7 @@
       <h1>Handball World</h1>
       <nav>
         <ul>
-          <li><a href="index.html">Accueil</a></li> 
+          <li><a href="index.html" class="active">Accueil</a></li>
           <li class="dropdown">
             <a href="a%20propos.html">À propos ▼</a>
             <ul class="dropdown-menu">
@@ -21,7 +21,7 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="competitions.html" class="active">Compétitions ▼</a>
+            <a href="competitions.html">Compétitions ▼</a>
             <ul class="dropdown-menu">
               <li><a href="JO.html">Jeux Olympiques</a></li>
               <li><a href="mondial.html">Championnat du Monde</a></li>
@@ -30,7 +30,7 @@
             </ul>
           </li>
           <li><a href="joueurs.html">Clubs & Joueurs</a></li>
-          <li><a href="php/actualites.php">Actualités</a></li>
+          <li><a href="actualite.html">Actualités</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -39,38 +39,38 @@
 
   <main>
     <section class="hero">
-      <h2>Bienvenue sur le site dédié au handball !</h2>
+      <div class="container">
+        <h2>Bienvenue sur <span style="color: #ff6600">Handball World</span> !</h2>
+        <p>Le site incontournable pour tous les passionnés de handball ⚽</p>
+        <a href="actualite.html" class="cta-button">Voir les dernières actualités</a>
+      </div>
     </section>
 
     <section class="intro">
       <div class="container">
-        <p>Découvre l’univers passionnant du handball : son histoire, ses règles, ses grandes compétitions et ses stars incontournables.</p>
-      </div>
-    </section>
-
-    <section class="quick-links">
-      <div class="container">
-        <h3>Explorer</h3>
+        <h3>Explore le monde du handball</h3>
         <div class="cards">
-          <a href="histoire.html" class="card">Histoire</a>
-          <a href="regles.html" class="card">Règles</a>
-          <a href="competitions.html" class="card">Compétitions</a>
-          <a href="joueurs.html" class="card">Joueurs</a>
+          <a href="histoire.html" class="card">📜 Histoire</a>
+          <a href="regles.html" class="card">⚖️ Règles</a>
+          <a href="competitions.html" class="card">🏆 Compétitions</a>
+          <a href="joueurs.html" class="card">👟 Clubs & Joueurs</a>
         </div>
       </div>
     </section>
 
     <section class="actus">
       <div class="container">
-        <h3>Dernières actualités</h3>
+        <h3>🗞️ À la une</h3>
         <div class="articles">
           <article>
-            <h4>Championnat du Monde 2025</h4>
-            <p>Les équipes qualifiées pour les quarts sont désormais connues...</p>
+            <h4>🏅 Championnat du Monde 2025</h4>
+            <p>Les meilleures nations s'affronteront en Scandinavie pour un titre mondial très attendu.</p>
+            <a href="actualite.html">Lire l'article →</a>
           </article>
           <article>
-            <h4>Focus sur Nikola Karabatic</h4>
-            <p>Retour sur la carrière d’un des plus grands handballeurs...</p>
+            <h4>👑 Légende : Karabatic tire sa révérence</h4>
+            <p>Un monument du handball met fin à sa carrière. Retour sur deux décennies de domination.</p>
+            <a href="actualite.html">Lire l'article →</a>
           </article>
         </div>
       </div>
@@ -79,6 +79,8 @@
 
   <footer>
     <div class="container">
-      <p>© 2025 Handball World - Tous droits réservés</p>
+      <p>&copy; 2025 Handball World - Tous droits réservés</p>
     </div>
   </footer>
+</body>
+</html>
