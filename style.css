@@ -217,3 +217,38 @@ footer {
   margin-top: 3rem;
   font-size: 0.9rem;
 }
+
+.origines { border-left: 5px solid #0078d7; }
+.codification { border-left: 5px solid #ff6600; }
+.expansion { border-left: 5px solid #28a745; }
+.competitions { border-left: 5px solid #ffc107; }
+.avenir { border-left: 5px solid #6f42c1; }
+
+.terrain { border-left: 5px solid #0078d7; }
+.joueurs { border-left: 5px solid #ff6600; }
+.regles { border-left: 5px solid #28a745; }
+.fautes { border-left: 5px solid #ffc107; }
+.sanctions { border-left: 5px solid #6f42c1; }
+
+.bloc {
+  background: #fefefe;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin: 2rem 0;
+}
+
+.bloc h3 {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.bloc ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bloc ul li {
+  margin-bottom: 1rem;
+  text-align: left;
+}
