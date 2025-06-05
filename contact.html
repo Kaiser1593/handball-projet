@@ -1,72 +1,132 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Handball World</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+      width: 80%;
+    }
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+      font-size: 1rem;
+    }
+    .form-group textarea {
+      height: 150px;
+    }
+    .contact-btn {
+      padding: 10px 30px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #01347f;
+      color: white;
+      cursor: pointer;
+    }
+    .info-utiles {
+      margin-top: 3rem;
+      font-size: 1.1rem;
+      background-color: #f3f3f3;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <h1>Handball World</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li class="dropdown">
-            <a>À propos ▼</a>
-            <ul class="dropdown-menu">
-              <li><a href="histoire.html">Histoire</a></li>
-              <li><a href="regles.html">Règles du jeu</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="competitions.html">Compétitions ▼</a>
-            <ul class="dropdown-menu">
-              <li><a href="JO.html">Jeux Olympiques</a></li>
-              <li><a href="mondial.html">Championnat du Monde</a></li>
-              <li><a href="euro.html">Championnat d’Europe</a></li>
-              <li><a href="LDC.html">Ligue des Champions (EHF)</a></li>
-            </ul>
-          </li>
-          <li><a href="joueurs.html">Clubs & Joueurs</a></li>
-          <li><a href="actualite.html">Actualités</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <main class="container">
-    <h2>📬 Contactez-nous</h2>
-    <p>Une question, une remarque, une demande d'information ? Remplissez le formulaire ci-dessous :</p>
+<header>
+  <div class="container">
+    <h1>Handball World</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li class="dropdown">
+          <a>À propos ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="histoire.html">Histoire</a></li>
+            <li><a href="regles.html">Règles du jeu</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="competitions.html">Compétitions ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="JO.html">Jeux Olympiques</a></li>
+            <li><a href="mondial.html">Championnat du Monde</a></li>
+            <li><a href="euro.html">Championnat d’Europe</a></li>
+            <li><a href="LDC.html">Ligue des Champions (EHF)</a></li>
+          </ul>
+        </li>
+        <li><a href="joueurs.html">Clubs & Joueurs</a></li>
+        <li><a href="actualite.html">Actualités</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-    <form class="contact-form">
-      <label for="nom">Nom :</label>
-      <input type="text" id="nom" name="nom" required>
+<main class="container">
 
-      <label for="email">Email :</label>
-      <input type="email" id="email" name="email" required>
+  <div class="contact-header">
+    <h2>📩 Contactez-nous</h2>
+    <p>Vous avez une question ou une remarque ? Remplissez le formulaire ci-dessous :</p>
+  </div>
 
-      <label for="sujet">Sujet :</label>
-      <input type="text" id="sujet" name="sujet">
+  <div class="contact-container">
+    <form>
+      <div class="form-group">
+        <label>Nom :</label>
+        <input type="text" placeholder="Votre nom">
+      </div>
 
-      <label for="message">Message :</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
+      <div class="form-group">
+        <label>Email :</label>
+        <input type="email" placeholder="Votre adresse email">
+      </div>
 
-      <button type="submit">Envoyer</button>
+      <div class="form-group">
+        <label>Sujet :</label>
+        <input type="text" placeholder="Objet de votre message">
+      </div>
+
+      <div class="form-group">
+        <label>Message :</label>
+        <textarea placeholder="Votre message"></textarea>
+      </div>
+
+      <button type="submit" class="contact-btn">Envoyer</button>
     </form>
 
-    <section class="infos-contact">
+    <div class="info-utiles">
       <h3>📍 Informations utiles</h3>
       <p><strong>Email :</strong> kaispadrines93@gmail.com</p>
       <p><strong>Téléphone :</strong> +33 1 23 45 67 89</p>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Handball World - Tous droits réservés</p>
     </div>
-  </footer>
+  </div>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Handball World - Tous droits réservés</p>
+  </div>
+</footer>
+
 </body>
 </html>
